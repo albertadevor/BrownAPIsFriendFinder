@@ -1,35 +1,43 @@
 .intro-header {
-  /*background-image: url('img/home-bg.jpg');*/
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/home-bg.jpg');
-  background-size: 100%;
-  background-position: -60px -60px;
-
+  background-color: #FF5252;
 }
 
 .dining-hall {
   display: inline-block;
-  width: 220px;
-  padding: 3px;
-  margin: 0;
+  width: 400px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #FFCDD2;
+  height: 400px;
+  vertical-align: top;
+  border-radius: 10px;
+
 }
 
 .row {
   text-align: center;
-}
-
-.divider{
-  border-width: 0px;
-  border-left:1px;
-  border-style:solid;
-  border-color:rgba(10,10,10,0.2);
-  border-radius: 5px;
-  display: inline-block;
-  height:200px;
-  vertical-align: center;
+  vertical-align: bottom;
 }
 
 #ratty-num, #br-num, #aco-num, #jos-num,
 #aco-num, #vw-num, #vw-chance, #aco-chance,
 #jos-chance, #ratty-chance, #br-chance {
   font-weight: bold;
+}
+.intro-header .site-heading h1 {
+  font-size: 40px;
+}
+
+.intro-header .site-heading {
+  padding: 20px 0 20px;
+}
+
+/* Prevent horizontal scrolling*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+footer {
+    padding: 0 0 65px;
 }
