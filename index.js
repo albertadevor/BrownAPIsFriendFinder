@@ -1,23 +1,20 @@
-$(function() {
-    $(".submit-button").click(function() {
+function rattyNum(data) {
+    $("#ratty-num").text(data.count);
+}
 
-        //submit function button goes here
-    });
+function brNum(data) {
+    $("#br-num").text(data.count);
+}
 
-    //  $(function(){
-    //    $('a[href*=#]:not([href=#])').click(function() {
-    //        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    //          var target = $(this.hash);
-    //          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    //          if (target.length) {
-    //            $('html,body').animate({
-    //              scrollTop: (target.offset().top - 135) // adjust this according to your content
-    //            }, 1000);
-    //            return false;
-    //          }
-    //        }
-    //    });
-    // });
-});
+function josNum(data) {
+    $("#jos-num").text(data.count);
+}
+function acoNum(data) {
+    $("#aco-num").text(data.count);
+}
+
+function vwNum(data) {
+    $("#vw-num").text(data.count);
+}
 
 

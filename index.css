@@ -27,3 +27,9 @@
   height:200px;
   vertical-align: center;
 }
+
+#ratty-num, #br-num, #aco-num, #jos-num,
+#aco-num, #vw-num, #vw-chance, #aco-chance,
+#jos-chance, #ratty-chance, #br-chance {
+  font-weight: bold;
+}

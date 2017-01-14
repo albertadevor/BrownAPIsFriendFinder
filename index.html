@@ -86,78 +86,39 @@
 
             <div class="dining-hall"> 
                 <h2> Ratty 🐀 </h2>
-                lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                There are <span id = "ratty-num">??</span> people in the Ratty right now.
+                You have a <span id = "ratty-chance">??</span> chance of running into someone you know.
+                <span id = "ratty-comment"></span>
             </div>
             <div class = "divider"></div>
 
              <div class="dining-hall"> 
                 <h2>Blue Room 🍩</h2>
-                 lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                 There are <span id = "br-num">??</span> people in the Ratty right now.
+                You have a <span id = "br-chance">??</span> chance of running into someone you know.
+                <span id = "br-comment"></span>
             </div>
             <div class = "divider"></div>
              <div class="dining-hall"> 
                 <h2> Jos 🍔 </h2>
-                 lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                  There are <span id = "jos-num">??</span> people in the Ratty right now.
+                You have a <span id = "jos-chance">??</span> chance of running into someone you know.
+                <span id = "jos-comment"></span>
             </div>
             <div class = "divider"></div>
             <div class="dining-hall"> 
                 <h2> Andrews 🍕 </h2>
-                 lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                 There are <span id = "aco-num">??</span> people in the Ratty right now.
+                You have a <span id = "aco-chance">??</span> chance of running into someone you know.
+                <span id = "aco-comment"></span>
             </div>
             <div class = "divider"></div>
             <div class="dining-hall"> 
                 <h2> VDub 🍗 </h2>
-                 lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                  There are <span id = "vw-num">??</span> people in the Ratty right now.
+                You have a <span id = "vw-chance">??</span> chance of running into someone you know.
+                <span id = "vw-comment"></span>
             </div>
-           
-
-           <!--  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Science has not yet mastered prophecy
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We predict too much for the next year and yet far too little for the next ten.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Failure is not an option
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-                </div>
-                <hr>
-            </div> -->
         </div>
     </div>
 
@@ -168,33 +129,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                    <p class="copyright text-muted">Created by Alberta Devor.<br> Copyright &copy; Alberta Devor 2017</p>
                 </div>
             </div>
         </div>
@@ -202,6 +137,21 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- my project JS -->
+    <script src="index.js"></script>
+
+    <!--Brown WiFi Apis -->
+    <script src="https://api.students.brown.edu/wifi/count?client_id={{Brown-API-Key}}&location=ratty&callback=rattyNum">
+    </script>
+    <script src="https://api.students.brown.edu/wifi/count?client_id={{Brown-API-Key}}&location=blueroom&callback=brNum">
+    </script>
+    <script src="https://api.students.brown.edu/wifi/count?client_id={{Brown-API-Key}}&location=jos&callback=josNum">
+    </script>
+    <script src="https://api.students.brown.edu/wifi/count?client_id={{Brown-API-Key}}&location=andrews&callback=acoNum">
+    </script>
+    <script src="https://api.students.brown.edu/wifi/count?client_id={{Brown-API-Key}}&location=vdub&callback=vwNum">
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
