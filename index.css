@@ -1,0 +1,29 @@
+.intro-header {
+  /*background-image: url('img/home-bg.jpg');*/
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/home-bg.jpg');
+  background-size: 100%;
+  background-position: -60px -60px;
+
+}
+
+.dining-hall {
+  display: inline-block;
+  width: 220px;
+  padding: 3px;
+  margin: 0;
+}
+
+.row {
+  text-align: center;
+}
+
+.divider{
+  border-width: 0px;
+  border-left:1px;
+  border-style:solid;
+  border-color:rgba(10,10,10,0.2);
+  border-radius: 5px;
+  display: inline-block;
+  height:200px;
+  vertical-align: center;
+}
